@@ -10,7 +10,7 @@ namespace lab8DependencyService
         {
             InitializeComponent();
 
-            MainPage = new BatteryDemo();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

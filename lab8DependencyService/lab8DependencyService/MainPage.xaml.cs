@@ -13,6 +13,15 @@ namespace lab8DependencyService
         public MainPage()
         {
             InitializeComponent();
+            baterryclick.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new BatteryDemo());
+            };
+
+            qrclick.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new ScanDemo());
+            };
         }
     }
 }
